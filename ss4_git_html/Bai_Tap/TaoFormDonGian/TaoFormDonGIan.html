@@ -7,38 +7,167 @@
         .wufoo {
             font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
         }
+        .blue {
+            color: blue;
+        }
+        .cam {
+            color: orangered;
+        }
+
     </style>
 </head>
 
 <body class="wufoo">
-    <h1>Phần 1<span style="color: red">*</span></h1>
 
-        <form action="TaoFormDonGIan.html" method="post">
-    <h2 style="color: white;background-color: orangered;">SỞ THÍCH CỦA BẠN</h2>
-        <p style="color: blue">Họ và tên
-            <input name="yourname" type="text"></br>
-        </p>
+<h1>Phần 2<span style="color: red">*</span></h1>
 
-        <p STYLE="color: blue">Email
-            <input name="youremail" type="email"></br>
-        </p>
+<form action="https://www.google.com/" method="get">
+    <table style="background-color: blanchedalmond">
+            <tr>
+                <th Class="blue" colspan="2" style="background-color: aquamarine" >ĐĂNG KÍ HỌC VIỆN</th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtname" Class="blue">Họ và tên :</label>
+                </td>
+                <td>
+                    <input type="text" id="txtname" placeholder="Yourname"/>
+                </td>
+            </tr>
 
-        <p STYLE="color: blue">Sở Thích</p>
-        <p style="color: orangered">
-            <input type="checkbox" name="hobby">Thể Thao
-            <input type="checkbox" name="hobby">Âm Nhạc
-            <input type="checkbox" name="hobby">Đọc Sách<br/>
-            <input type="checkbox" name="hobby">Lướt web
-            <input type="checkbox" name="hobby">Chơi Game
-            <input type="checkbox" name="hobby">Điện Ảnh<br/>
-            <input type="checkbox" name="hobby">Du Lịch
-        </p>
-    <input type="submit" value="Gửi thông tin">
-    <input type="reset" VALUE="Nhập lại">
+              <tr>
+                 <td>
+                     <label Class="blue" for="day">Ngày sinh :</label>
+                 </td>
+                 <td>
+                      <input type="date" id="day"/>
+                 </td>
+              </tr>
+
+             <tr>
+                <td>
+                    <label Class="blue">Giới tính :</label>
+                </td>
+                <td>
+                    <input type="radio" name="Gioitinh"/> Nam
+                    <input type="radio" name="Gioitinh"/> Nữ
+                </td>
+            </tr>
+
+             <tr>
+                 <td>
+                     <label Class="blue">Địa chỉ :</label>
+                 </td>
+                <td>
+                    <textarea>
+                    </textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label Class="blue">Lớp :</label>
+                </td>
+                <td>
+                    <select>
+                        <option>---Chọn Lớp---</option>
+                        <option>A0322I1</option>
+                        <option>A0322I2</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label Class="blue" for="gmail">Email :</label>
+                </td>
+                <td>
+                    <input type="email" id="gmail" placeholder="Email"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label Class="blue" for="phone">Điện Thoại :</label>
+                </td>
+                <td>
+                    <input type="number" id="phone" placeholder="Số điện thoại">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <input type="submit" VALUE="Đăng ký">
+                    <input type="reset" value="Nhập lại">
+                </td>
+            </tr>
+    </table>
 </form>
 
-    <h1>Phần 2<span style="color: red">*</span></h1>
+<h1> Phần 1</h1>
 
+<form>
+    <table cellspacing="15px" >
+        <tr>
+            <TH colspan="3" style="background-color: orangered;color: white" >SỞ THÍCH CỦA BẠN</TH>
+        </tr>
+        <tr>
+            <td>
+                <label Class="blue" for="txtten">Họ và tên </label>
+            </td>
+            <td>
+                <input type="text" id="txtten" placeholder="Tên của bạn">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label Class="blue" for="txtgmail">Email</label>
+            </td>
+            <td>
+                <input type="email" id="txtgmail" placeholder="Email của bạn">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label Class="blue">Sở thích</label>
+            </td>
+            <td class="cam">
+                <input type="checkbox" name="hobby"> Thể thao
+                <input type="checkbox" name="hobby"> Âm nhạc
+                <input type="checkbox" name="hobby"> Đọc sách
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td class="cam">
+                <input type="checkbox" name="hobby"> Lướt web
+                <input type="checkbox" name="hobby"> Chơi game
+                <input type="checkbox" name="hobby"> Điện ảnh
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td class="cam">
+                <input type="checkbox" name="hobby"> Du lịch
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                <input type="submit" VALUE="Gửi thông tin">
+                <input type="reset" value="Nhập lại">
+            </td>
+        </tr>
+    </table>
 
 </form>
 
