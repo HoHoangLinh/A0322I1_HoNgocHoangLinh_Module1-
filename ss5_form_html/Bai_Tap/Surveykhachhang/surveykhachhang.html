@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>surveykhachhang</title>
+    <style>
+        input.medium, select.medium {
+            width: 50%;
+        }
+        .font {
+            font-size: 95%;
+            font-weight: bold;
+        }
+        .wufoo {
+            font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+        input.text, input.search, input.file, textarea.textarea, select.select {
+            font-size: 100%;
+            color: #333;
+            margin: 0 ;
+            padding: 5px 0;
+            width: 85px;
+            height: 10px;
+        }
+
+    </style>
+</head>
+<body class="wufoo">
+    <h2>Market Research Survey</h2>
+        <p>Please take a few momments to complete this satisfaction survey.</p>
+    <form>
+            <p>
+                <label class="font">What is your age range?</label></br>
+                <select class="medium">
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-50">35-50</option>
+                    <option value="50+">50+</option>
+                </select>
+            </p>
+
+            <p>
+                <label class="font">What is your yearly income range?</label></br>
+                <select class="medium">
+                    <option value="$0 - $25,000">$0 - $25,000</option>
+                    <option value="$25,001 - $50,000">$25,001 - $50,000</option>
+                    <option value="$50,001 - 100,000">$50,001 - 100,001</option>
+                    <option value="$100,000+">$100,000+</option>
+                </select>
+            </p>
+
+            <p>
+                <label class="font">Gender Identity</label></br>
+                    <input type="radio" name="Gender"/> Male</br>
+                    <input type="radio" name="Gender"/> Female</br>
+                    <input type="radio" name="Gender"/> Nonbinary</br>
+                    <input type="radio" name="Gender"/> Other</br>
+                    <input type="text">
+            </p>
+
+            <p>
+                <label class="font">Which of the following products have your purchased in the last 2 months. Please check all that apply.</label>
+</br>               <input type="checkbox"/> Product 1
+</br>               <input type="checkbox"/> Product 2
+</br>                    <input type="checkbox"/> Product 3
+            </p>
+
+            <p>
+                <label class="font">How often would you use our new product?</label></br>
+                    <input type="radio" name="day"> Daily</br>
+                    <input type="radio" name="day"> Weekly</br>
+                    <input type="radio" name="day"> Monthly
+            </p>
+
+            <p>
+                <label class="font">What would you pay for the new product?</label>
+                <table>
+                    <tr>
+                        <td>
+                            <label>$</label>
+                        </td>
+                        <td>
+                            <input type="text" class="text" id="Dollars"> .
+                        </td>
+                        <td>
+                            <input type="text" class="text" style="width: 15px" id="Cents">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <label for="Dollars">Dollars</label>
+                        </td>
+                        <td>
+                            <label for="Cents">Cents</label>
+                        </td>
+                    </tr>
+                </table>
+
+            </p>
+
+
+    </form>
+
+</body>
+</html>
