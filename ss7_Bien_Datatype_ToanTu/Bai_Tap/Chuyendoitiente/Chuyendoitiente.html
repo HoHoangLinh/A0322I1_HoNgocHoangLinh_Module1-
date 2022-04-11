@@ -14,25 +14,29 @@
         </tr>
         <tr>
             <td>
-                <input TYPE="text">
+                <input TYPE="number" value="23000" id="Amount">
             </td>
+
             <td>
-                <select>
-                    <option>VIETNAM</option>
-                    <option>MỸ</option>
+                <select id="FromC">
+                    <option id="VND">VND</option>
+                    <option id="USD">USD</option>
                 </select>
             </td>
+
             <td>
-                <select>
-                    <option>VND</option>
-                    <option>$</option>
+                <select id="To">
+                    <option id="US">USD</option>
+                    <option id="VN">VND</option>
                 </select>
             </td>
+
             <td>
-                <button type="button">Convert</button>
+                <button type="button" onclick="Convert()">Convert</button>
             </td>
         </tr>
 </table>
+    <p id="Result"><p>
 </form>
 
 <script src="Chuyendoitiente.js"></script>
