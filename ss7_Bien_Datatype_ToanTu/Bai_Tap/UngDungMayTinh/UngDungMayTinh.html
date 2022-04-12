@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UngDungMayTinh</title>
+</head>
+<body>
+
+<form>
+    <input type="number" id="num1" value="12">
+    <input type="number" id="num2" value="12"></br>
+
+    <button type="button" onclick="Addition()">Addition(+)</button>
+    <button type="button" onclick="Subtraction()">Subtraction(-)</button>
+    <button type="button" onclick="Multiplication()">Multiplication(x)</button>
+    <button type="button" onclick="Division()">Division(/)</button>
+    <p id="kq">Kết Quả :</p>
+</form>
+
+
+<script>
+        let num1 = document.getElementById('num1');
+        let num2 = document.getElementById('num2');
+        let kq = document.getElementById('kq');
+            function Addition() {
+                kq.innerHTML = "Kết Quả : " + (parseInt(num1.value) + parseInt(num2.value));
+            }
+            function Subtraction() {
+                kq.innerHTML = "Kết Quả : " + (parseInt(num1.value) - parseInt(num2.value));
+            }
+            function Multiplication() {
+                kq.innerHTML = "Kết Quả : " + (parseInt(num1.value) * parseInt(num2.value));
+            }
+             function Division() {
+                kq.innerHTML = "Kết Quả : " + (parseInt(num1.value) / parseInt(num2.value));
+            }
+</script>
+</body>
+</html>
