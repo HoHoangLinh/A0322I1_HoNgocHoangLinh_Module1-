@@ -1,5 +1,5 @@
-var D;
+let D;
 const pi = 3.14;
-var D = parseInt(prompt("Nhập đường kính : "));
-var C = D * pi;
+let D = parseInt(prompt("Nhập đường kính : "));
+let C = D * pi;
 document.write("Chu vi hình tròn là : " +C);

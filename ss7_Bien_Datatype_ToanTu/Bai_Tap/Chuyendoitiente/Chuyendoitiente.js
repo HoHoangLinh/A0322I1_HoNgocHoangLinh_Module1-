@@ -1,8 +1,8 @@
 function Convert() {
-    let Amount = document.getElementById("Amount").value;
-    let FromC = document.getElementById("FromC").value;
-    let To = document.getElementById("To").value;
-    let Result;
+    var Amount = document.getElementById("Amount").value;
+    var FromC = document.getElementById("FromC").value;
+    var To = document.getElementById("To").value;
+    var Result;
     if (FromC == "USD" && To == "VND") {
         Result = "result : " + (Amount * 23000) + "VND"
         document.getElementById("Result").innerHTML = Result;
