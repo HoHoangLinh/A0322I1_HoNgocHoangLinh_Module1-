@@ -10,7 +10,7 @@
 <script>
     function upArrowPressd() {
         let Element = document.getElementById('nobita');
-        Element.style.top = parseInt(Element.style.top) - 10 - 'px';
+        Element.style.top = parseInt(Element.style.top) - 10 + 'px';
     }
     function downArrowPressd() {
         let Element = document.getElementById('nobita');
@@ -18,25 +18,25 @@
     }
     function leftArrowPressd() {
         let Element = document.getElementById('nobita');
-        Element.style.left = parseInt(Element.style.left) - 10 - 'px';
+        Element.style.left = parseInt(Element.style.left) - 10 + 'px';
     }
     function rightArrowPressd() {
         let Element = document.getElementById('nobita');
         Element.style.left = parseInt(Element.style.left) + 10 + 'px';
     }
     function MovePressed(evt) {
-        switch (evt.key){
+        switch (evt.keyCode){
             case 37 :
-                upArrowPressd()
-                break;
-            case 39 :
-                downArrowPressd()
-                break;
-            case 38 :
                 leftArrowPressd()
                 break;
-            case 40 :
+            case 39 :
                 rightArrowPressd()
+                break;
+            case 38 :
+                upArrowPressd()
+                break;
+            case 40 :
+                downArrowPressd()
                 break;
         }
     }
