@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Event_banphim</title>
 </head>
-<body>
-$END$
+<body onload="Doready()">
+<img src="Nobita.png" id="nobita" style="position: absolute;height: 300px;left: 0;top: 0">
+
+<script>
+    function upArrowPressd() {
+        let Element = document.getElementById('nobita');
+        Element.style.top = parseInt(Element.style.top) - 10 - 'px';
+    }
+    function downArrowPressd() {
+        let Element = document.getElementById('nobita');
+        Element.style.top = parseInt(Element.style.top) + 10 + 'px';
+    }
+    function leftArrowPressd() {
+        let Element = document.getElementById('nobita');
+        Element.style.left = parseInt(Element.style.left) - 10 - 'px';
+    }
+    function rightArrowPressd() {
+        let Element = document.getElementById('nobita');
+        Element.style.left = parseInt(Element.style.left) + 10 + 'px';
+    }
+    function MovePressed(evt) {
+        switch (evt.key){
+            case 37 :
+                upArrowPressd()
+                break;
+            case 39 :
+                downArrowPressd()
+                break;
+            case 38 :
+                leftArrowPressd()
+                break;
+            case 40 :
+                rightArrowPressd()
+                break;
+        }
+    }
+    function Doready() {
+        window.addEventListener('keydown', MovePressed);
+    }
+
+</script>
 </body>
 </html>
