@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai7</title>
+</head>
+<body>
+<h3>Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho</h3>
+<script>
+    let thoigian = parseFloat(prompt("Nhập thời gian gọi ?"));
+    let cuoc = ((thoigian * 1650 / 60)* 100) / 100;
+    if (cuoc) {
+        document.write("Cước điện thoại của bạn là " + cuoc + " VND");
+    } else {
+        document.write("error");
+    }
+</script>
+</body>
+</html>

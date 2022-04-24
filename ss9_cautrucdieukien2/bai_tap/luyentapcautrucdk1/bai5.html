@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<h3>Bài 3 : Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ</h3>
+<script>
+    let kiemtra = parseInt(prompt("Nhập điểm kiểm tra ?"));
+    let giuaki = parseInt(prompt("Nhập điểm thi giữa kì ?"));
+    let cuoiki = parseInt(prompt("Nhập thi cuối kì ?"));
+    let Result = (kiemtra + giuaki + cuoiki) / 3;
+    if (Result >= 8) {
+        document.write("Xếp hạng học lực của bạn là Giỏi " + Result);
+    } else if (Result >= 6.5) {
+        document.write("Xếp hạng học lực của bạn là Khá " + Result);
+    } else if (Result >= 5) {
+        document.write("Xếp hạng học lực của bạn là Trung Bình " + Result);
+    } else {
+        document.write("Xếp hạng học lực của bạn là Yếu " + Result);
+    }
+</script>
+</body>
+</html>
