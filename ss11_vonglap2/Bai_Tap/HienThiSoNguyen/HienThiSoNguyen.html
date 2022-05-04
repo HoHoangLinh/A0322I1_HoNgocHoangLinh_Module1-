@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoNguyen</title>
+</head>
+<body>
+<h3>Hiển Thị số Nguyên</h3>
+<script>
+    var number = parseInt(prompt("Bạn muốn in bao nhiêu số nguyên?"))
+    var count = 0;
+    var a = 2;
+    // var n = 4;
+        while(count < number) {
+            var mark = true;
+            for (i = 2; i <= Math.sqrt(a); i++){
+                if (a % i === 0) {
+                    mark = false;
+                    break;
+                }
+            }
+        if (mark) {
+            count++;
+            document.write(a + "<br>");
+        }
+        a++;
+        }
+
+</script>
+</body>
+</html>
