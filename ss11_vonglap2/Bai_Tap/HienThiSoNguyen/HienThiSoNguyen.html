@@ -7,24 +7,22 @@
 <body>
 <h3>Hiển Thị số Nguyên</h3>
 <script>
-    var number = parseInt(prompt("Bạn muốn in bao nhiêu số nguyên?"))
+    var N = 4;
     var count = 0;
     var a = 2;
-    // var n = 4;
-        while(count < number) {
-            var mark = true;
-            for (i = 2; i <= Math.sqrt(a); i++){
-                if (a % i === 0) {
-                    mark = false;
-                    break;
-                }
+    while (count < N){
+        var b = true;
+        for (i = 2 ; i <= Math.sqrt(a) ; i++){
+            if (a % i === 0) {
+                b = false;
+                break;
             }
-        if (mark) {
+        } if (b) {
             count++;
             document.write(a + "<br>");
         }
         a++;
-        }
+    }
 
 </script>
 </body>

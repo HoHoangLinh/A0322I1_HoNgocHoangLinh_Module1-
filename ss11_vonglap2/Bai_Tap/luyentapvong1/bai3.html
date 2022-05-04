@@ -7,7 +7,17 @@
 <body>
 <script>
     let value = prompt("Nhập dãy fibonacci muốn hiện ?");
-    for (i = 0 ;i < ) {}
+    let a = 0;
+    let b = 1;
+    let result;
+    for (i = 1 ; i <= value; i++){
+        document.write(a + "<br>");
+        result = a + b;
+        a = b ;
+        b = result;
+    }
+    document.write(result);
+
 </script>
 </body>
 </html>
