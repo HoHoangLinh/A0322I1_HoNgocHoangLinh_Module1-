@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //       Bai 1:
+    // let arr = ["Red","Blue","Green","White"];
+    // console.log(arr.join());
+
+    //       Bai 2 :
+    // let arr = window.prompt("Nhap So Ngau Nhien?");
+    // let str = arr.toString();
+    // let result = [str[0]];
+    // for ( let i = 1 ; 0 < arr.length; i++) {
+    //     if ((str[i - 1] % 2 === 0) && (str[i] % 2 === 0)){
+    //         result.push('-',str[i]);
+    //     } else
+    //     {
+    //         result.push(str[i]);
+    //     }
+    // }
+    // console.log(result.join(''));
+
+    //        Bai 3
+    var  str = "The Quick Brown Fox"
+    var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var result = [];
+    for (var x = 0 ; x < str.length; x++) {
+        if (UPPER.indexOf(str[x]) !== -1) {
+            result.push(str[x].toLowerCase());
+        } else if (LOWER.indexOf(str[x]) !== -1) {
+            result.push(str[x].toUpperCase() !== -1)
+        } else {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+
+</script>
+</body>
+</html>
