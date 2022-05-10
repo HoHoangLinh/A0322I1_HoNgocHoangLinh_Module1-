@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>TuDien</h2>
+<form>
+    <input type="search" id="a">
+    <button onclick="search()">Search</button>
+</form>
+<script>
+    function search(){
+        let en = ["Hello","Fine","Thanks"];
+        let vn = ["XinChao" , "On" , "Camon"];
+        let index = en.indexOf("a")
+        if (index != -1){
+            document.write(vn[index]);
+        }else {
+            document.write("Not Found !")
+        }
+    }
+</script>
+</body>
+</html>
