@@ -7,20 +7,31 @@
 <body>
 <h2>TuDien</h2>
 <form>
-    <input type="search" id="a">
+    <input type="text" id="a">
     <button onclick="search()">Search</button>
+    <p id="result"></p>
 </form>
 <script>
+    let en = [
+        "hello",
+        "Fine",
+        "Thanks"
+    ];
+    let vn = [
+        "XinChao" ,
+        "On" ,
+        "Cam on"
+    ];
     function search(){
-        let en = ["Hello","Fine","Thanks"];
-        let vn = ["XinChao" , "On" , "Camon"];
-        let index = en.indexOf("a")
-        if (index != -1){
-            document.write(vn[index]);
-        }else {
-            document.write("Not Found !")
+        let index = document.getElementById("a").value;
+        if (en.indexOf(index) > -1) {
+            document.write(vn[en.indexOf(index)]);
+        } else  {
+            document.write("Not Found!..")
         }
-    }
+
+        }
+
 </script>
 </body>
 </html>
