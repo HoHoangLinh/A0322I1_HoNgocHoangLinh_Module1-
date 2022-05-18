@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>bai1</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [];
+    let count = 0;
+    for (let a = 0 ; a < 10 ; a++) {
+        arr.push(Math.fround(Math.random()) * 100);
+    }
+    for (let i = 0 ; i < arr.length ; i++) {
+        if (arr[i] >= 10) {
+            count += 1;
+        }
+    }
+    document.write("So Nguyen lon hon hoac bang 10 la" + count);
+</script>
 </body>
 </html>

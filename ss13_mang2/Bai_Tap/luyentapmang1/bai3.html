@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  let arr = [];
+  for (let i = 0 ; i < 10 ; i++) {
+      arr.push(Math.floor(Math.random() * 100));
+  }
+  let max = arr[0];
+  let sum = 0;
+  for (let j = 0 ; j < arr.length ; j++) {
+      if (arr[j] > max) {
+          max = arr[j];
+      }
+      sum += arr[j]
+  }
+  let avg = sum / arr.length;
+  alert("Gia tri lon nhat : " + max + " Trung binh la : " + avg);
+</script>
 </body>
 </html>
