@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Nhap Star Name?")
+        function searchstar(a) {
+            let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+            let value = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+            for (let i = 0 ; i < star.length; i++) {
+                    if (a === star[i] ) {
+                        return star[i] + " Gia Tri " + value[i];
+                    }
+            }
+            return a + " Khong hop le !!"
+        }
+
+        alert(searchstar(a));
+    </script>
+</body>
+</html>
