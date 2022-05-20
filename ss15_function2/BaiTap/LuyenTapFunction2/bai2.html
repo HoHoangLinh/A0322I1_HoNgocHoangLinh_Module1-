@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="0">
+    <tr>
+        <td>
+            <label>Dien Tich</label>
+        </td>
+        <td>
+            <label>Chu Vi</label>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" oninput="ChangeDT(this.value)" onchange="ChangeDT(this.value)">
+        </td>
+        <td>
+            <input type="number" oninput="ChangeCV(this.value)" onchange="ChangeCV(this.value)">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Dien Tich => <span id="DT"></span></p>
+        </td>
+        <td>
+            <p>Chu Vi => <span id="CV"></span></p>
+        </td>
+    </tr>
+</table>
+
+    <script>
+        function ChangeDT(DT) {
+            DT = parseFloat(DT);
+            document.getElementById('DT').innerHTML = 3.14*(DT * DT);
+        }
+        function ChangeCV(CV) {
+            document.getElementById('CV').innerHTML = CV*2*3.14;
+        }
+    </script>
+</body>
+</html>
