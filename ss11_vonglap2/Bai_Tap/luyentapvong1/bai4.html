@@ -5,6 +5,22 @@
     <title>Title</title>
 </head>
 <body>
+    <script>
+        let n = parseInt(prompt("Nhập số chia hết cho F : ?"))
+        let a = 1;
+        let b = 1;
+        let result;
+        while (true) {
+            result = a + b
+            b = a
+            a = result
+            document.write(result + " ");
+            if (result % n == 0 ) {
+                alert("Đây là số F chia hết cho " + n + " : " + result)
+                break;
+            }
+        }
 
+    </script>
 </body>
 </html>
