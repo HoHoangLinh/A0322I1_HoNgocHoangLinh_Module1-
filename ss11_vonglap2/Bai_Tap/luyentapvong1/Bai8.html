@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <button onclick="play()">Play</button>
+    <p id="t"></p>
+<body>
+    <script>
+        // let input = parseInt(prompt("Nhập số đoán từ 0 -> ?"));
+        // let N = parseInt(prompt("Nhập số đoán"));
+
+        let result;
+        function play() {
+            let start = parseFloat(prompt("Start Number").value);
+            let end = parseFloat(prompt("End Number").value);
+            let count = 0;
+            for (let i = 1 ; i < 2 ; i++) {
+                let N = parseFloat(prompt("Enter your Number ?"));
+                if (N == random(start,end)) {
+                    alert("Chúc mừng bạn đã chiến thắng")
+                    break;
+                }
+            count += 1
+            }
+            if (count == 2) {
+                alert("You Lose!!")
+            }
+        }
+
+        function random(start,end) {
+            return Math.floor(Math.random() * (end - start + 1)) + start
+        }
+    </script>
+</body>
+</html>
