@@ -7,19 +7,20 @@
 <body>
 <script>
     let arr = [];
-    for (let i = 0 ; i < 10 ; i++) {
-        arr.push(Math.fround(Math.random() * 100));
+    for (let i = 0 ; i < 10 ; i++ ) {
+        arr.push(Math.floor(Math.random() * 100));
     }
     let max = arr[0];
     let poi = 0;
 
-    for (let j = 0 ; j < arr.length; j++) {
-        if (arr[j] < max ) {
-            max = arr[j]
+    for (let j = 0 ; j < arr.length ; j++) {
+        if (arr[j] > max) {
+            max = arr[j];
             poi = j
         }
     }
-    alert("So Lon Nhat trong mang la " + max + " vi tri la " + poi);
+    document.write(arr)
+    alert("So lon nhat la " + max + " o vi tri " + poi)
 </script>
 </body>
 </html>

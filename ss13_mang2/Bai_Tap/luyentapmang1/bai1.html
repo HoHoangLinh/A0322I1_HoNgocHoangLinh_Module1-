@@ -8,15 +8,16 @@
 <script>
     let arr = [];
     let count = 0;
-    for (let a = 0 ; a < 10 ; a++) {
-        arr.push(Math.fround(Math.random()) * 100);
+    for (let i = 0 ; i < 10 ; i++) {
+        arr.push(Math.floor(Math.random() * 20))
     }
-    for (let i = 0 ; i < arr.length ; i++) {
-        if (arr[i] >= 10) {
-            count += 1;
+    for (let a = 0 ; a < arr.length ; a++) {
+        if (arr[a] >= 10) {
+            count += 1
         }
     }
-    document.write("So Nguyen lon hon hoac bang 10 la" + count);
+ document.write("Số nguyên lớn hơn hoặc bằng 10 là " + count + "<br>")
+    document.write(arr)
 </script>
 </body>
 </html>
