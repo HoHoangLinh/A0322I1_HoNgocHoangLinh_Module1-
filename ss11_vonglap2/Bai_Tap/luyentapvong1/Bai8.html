@@ -4,34 +4,33 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-    <button onclick="play()">Play</button>
+    <input type="button" value="Play" onclick="play()">
     <p id="t"></p>
 <body>
     <script>
-        // let input = parseInt(prompt("Nhập số đoán từ 0 -> ?"));
-        // let N = parseInt(prompt("Nhập số đoán"));
 
         let result;
         function play() {
-            let start = parseFloat(prompt("Start Number").value);
-            let end = parseFloat(prompt("End Number").value);
+            let start = parseInt(prompt("Start Number"));
+            let end = parseInt(prompt("End Number"))
             let count = 0;
-            for (let i = 1 ; i < 2 ; i++) {
-                let N = parseFloat(prompt("Enter your Number ?"));
+            for (let i = 1 ; i <= 3 ; i++) {
+                let N = parseInt(prompt("Enter your Number ?"));
                 if (N == random(start,end)) {
-                    alert("Chúc mừng bạn đã chiến thắng")
+                    alert("Chúc mừng bạn đã chiến thắng");
                     break;
                 }
-            count += 1
+                count += 1
+                if (count == 3) {
+                    alert("You Lose!!")
             }
-            if (count == 2) {
-                alert("You Lose!!")
             }
         }
 
         function random(start,end) {
-            return Math.floor(Math.random() * (end - start + 1)) + start
+            return Math.floor(Math.random() * (end - start) + start);
         }
+        // document.write(random(1,5))
     </script>
 </body>
 </html>

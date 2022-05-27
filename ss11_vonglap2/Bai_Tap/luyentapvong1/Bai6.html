@@ -6,31 +6,15 @@
 </head>
 <body>
     <script>
-        let a = 1;
-        let b = 2;
+        let a = 7;
+        let b = 0;
         let result;
-        // for (let i = 1; i <= 30 ; i++) {
-        //     result = a + b
-        //     a = b
-        //     b = result
-        //     // document.write(i)
-        //     if (result % 7 == 0) {
-        //         alert("Đây là tổng chia hết cho 7 : " + result)
-        //     }
-        // }
-        // document.write(result)
-
-        while (true){
+        for (let i = 1 ; i <= 30; i++) {
             result = a + b
-                a = b
-                b = result
-            // document.write(result)
-            if (result % 7 == 0) {
-                        alert("Đây là tổng chia hết cho 7 : " + result)
-                break;
-            }
+            b = result
+            a += 7
         }
-
+    alert(result)
     </script>
 </body>
 </html>
