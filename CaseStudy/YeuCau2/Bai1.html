@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // thue = money - money*thue/100
+    let money = parseInt(prompt("Nhap So tien Luong"))
+    let thue = 0;
+    let moneynv = 0;
+    if (money >= 15000000) {
+        thue = 20;
+        moneynv = money - (money*thue/100);
+    } else if (money >= 7000000) {
+        thue = 10;
+        moneynv = money - (money*thue/100);
+    } else {
+        thue = 5;
+        moneynv = money - (money*thue/100);
+    }
+    alert("Số tiền lương nhân viên qua thuế " + thue + " % là : " + moneynv )
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Chieucao = parseInt(prompt("Nhap Chieu Cao "));
+    let count = "";
+    for (let i = 1; i <= Chieucao; i++) {
+        for (let j = 1 ; j <= Chieucao ; j++) {
+            if (i === Chieucao) {
+                count += "*"
+            } else if (j === 1 || j === i) {
+                count += "*"
+            } else {
+                count += "&ensp;"
+            }
+        }
+        count += "<br>"
+    }
+    document.write(count);
+
+</script>
+</body>
+</html>

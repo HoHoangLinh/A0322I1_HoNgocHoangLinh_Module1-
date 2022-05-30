@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let height = parseInt(prompt("Nhap CHieu Cao"));
+        let weight = height*2 -1;
+        let count = ""
+        for (let i = 1 ; i <= height ; i++) {
+            for (let j = 0 ; j<= weight / 2 - i ; j++) {
+                count += "&ensp;"
+            }for (let z = 1 ; z <= i * 2 -1 ; z++) {
+                count += "*;"
+            }
+            count += "<br>"
+        }
+        document.write(count);
+    </script>
+</body>
+</html>
