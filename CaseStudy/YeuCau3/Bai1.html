@@ -6,15 +6,18 @@
 </head>
 <body>
 <script>
-    let a = [1,2,3];
+    let a = [];
     let b = [];
-    for (let i = 0 ; i < a.length ; i++) {
-        b[0] = a[0];
-        b[1] = a[0] + a[1]
-        b[2] = b[0] + a[1] + a[2];
-        b.push(b[0],b[1],b[2]);
+    let value = 0;
+    let N = parseInt(prompt("Nhập độ dài mảng"))
+    for (let i = 0 ; i < N ; i++) {
+        a.push(parseInt(prompt("Nhập số nguyên của mảng ?")))
     }
-    alert(b)
+    for (let j = 0 ; j < a.length ; j++){
+        value += a[j]
+        b[j] = value
+    }
+    alert("mảng A : " + a + "\n" + "mảng B : " + b)
 </script>
 </body>
 </html>
